@@ -233,7 +233,7 @@ namespace HttpServer.Messages
         public void WriteBody(string data)
         {
             var bs=Encoding.GetBytes(data);
-            Body.Write(bs);
+            Body.Write(bs,0,bs.Length);
         }
 
         #endregion
