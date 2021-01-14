@@ -230,6 +230,12 @@ namespace HttpServer.Messages
             return GetEnumerator();
         }
 
+        public void WriteBody(string data)
+        {
+            var bs=Encoding.GetBytes(data);
+            Body.Write(bs);
+        }
+
         #endregion
     }
 }

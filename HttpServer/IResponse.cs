@@ -51,5 +51,6 @@ namespace HttpServer
         /// Any modifications after a redirect will be ignored.
         /// </remarks>
         void Redirect(string uri);
+        void WriteBody(string data);
     }
 }
